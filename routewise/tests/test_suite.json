@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "prompt": "What is the capital of France?",
+    "label": "simple",
+    "note": "Single factual lookup."
+  },
+  {
+    "id": 2,
+    "prompt": "Who wrote Romeo and Juliet?",
+    "label": "simple",
+    "note": "Direct recall, no reasoning."
+  },
+  {
+    "id": 3,
+    "prompt": "How many days are in a leap year?",
+    "label": "simple",
+    "note": "Single numeric fact."
+  },
+  {
+    "id": 4,
+    "prompt": "What does HTTP stand for?",
+    "label": "simple",
+    "note": "Abbreviation lookup."
+  },
+  {
+    "id": 5,
+    "prompt": "List the planets in our solar system.",
+    "label": "simple",
+    "note": "Simple enumeration from memory."
+  },
+  {
+    "id": 6,
+    "prompt": "Convert 100 Celsius to Fahrenheit.",
+    "label": "simple",
+    "note": "One-step formula application."
+  },
+  {
+    "id": 7,
+    "prompt": "What year did World War II end?",
+    "label": "simple",
+    "note": "Date recall."
+  },
+  {
+    "id": 8,
+    "prompt": "True or false: the sun is a star.",
+    "label": "simple",
+    "note": "Binary factual answer."
+  },
+  {
+    "id": 9,
+    "prompt": "What is 15 percent of 200?",
+    "label": "simple",
+    "note": "Single arithmetic step."
+  },
+  {
+    "id": 10,
+    "prompt": "Name three programming languages.",
+    "label": "simple",
+    "note": "Recall-only, no reasoning."
+  },
+  {
+    "id": 11,
+    "prompt": "Explain how transformer neural networks work, including self-attention and why they replaced RNNs for sequence tasks.",
+    "label": "complex",
+    "note": "Multi-concept technical explanation."
+  },
+  {
+    "id": 12,
+    "prompt": "Write a Python function that implements merge sort and analyse its time and space complexity.",
+    "label": "complex",
+    "note": "Code generation plus complexity analysis."
+  },
+  {
+    "id": 13,
+    "prompt": "Compare microservices architecture with a monolithic architecture. When would you choose each and what are the operational trade-offs?",
+    "label": "complex",
+    "note": "Comparative analysis across multiple dimensions."
+  },
+  {
+    "id": 14,
+    "prompt": "Debug this Python snippet and explain the bug: def fib(n): return fib(n-1) + fib(n-1) if n > 1 else n",
+    "label": "complex",
+    "note": "Code reading plus error diagnosis."
+  },
+  {
+    "id": 15,
+    "prompt": "Analyse the causes of the 2008 financial crisis, the role of mortgage-backed securities, and what regulatory changes followed.",
+    "label": "complex",
+    "note": "Multi-factor causal analysis."
+  },
+  {
+    "id": 16,
+    "prompt": "Design a rate-limiting system for a REST API handling 10,000 requests per second. Walk me through the architecture, data structures, and trade-offs.",
+    "label": "complex",
+    "note": "System design with architectural reasoning."
+  },
+  {
+    "id": 17,
+    "prompt": "Write a detailed essay comparing utilitarian and deontological ethics in the context of autonomous vehicle decision-making.",
+    "label": "complex",
+    "note": "Long-form writing with applied ethical reasoning."
+  },
+  {
+    "id": 18,
+    "prompt": "Explain the CAP theorem and how it influences the choice between DynamoDB, Cassandra, and PostgreSQL for a distributed inventory system.",
+    "label": "complex",
+    "note": "Concept explanation applied to a real system selection."
+  },
+  {
+    "id": 19,
+    "prompt": "Translate the following into formal academic French and explain any idiomatic choices you made for difficult phrases.",
+    "label": "complex",
+    "note": "Translation plus meta-commentary — two tasks."
+  },
+  {
+    "id": 20,
+    "prompt": "Summarise the key arguments in the last five paragraphs and identify any logical inconsistencies in the reasoning.",
+    "label": "complex",
+    "note": "Summarisation plus logical analysis — multi-step even though it says summarise."
+  },
+  {
+    "id": 21,
+    "prompt": "Summarise this.",
+    "label": "simple",
+    "note": "Edge case: sounds like a task but has no actual content — trivially simple."
+  },
+  {
+    "id": 22,
+    "prompt": "Explain what happened.",
+    "label": "simple",
+    "note": "Edge case: open-ended but zero context, so the answer will be short."
+  },
+  {
+    "id": 23,
+    "prompt": "What is Python?",
+    "label": "simple",
+    "note": "Edge case: 'python' is a code signal but this is just a definition question."
+  },
+  {
+    "id": 24,
+    "prompt": "Give me a one-sentence summary of machine learning.",
+    "label": "simple",
+    "note": "Edge case: explicitly one sentence, constrained output."
+  },
+  {
+    "id": 25,
+    "prompt": "List five SQL commands.",
+    "label": "simple",
+    "note": "Edge case: SQL is a code signal but this is pure recall."
+  },
+  {
+    "id": 26,
+    "prompt": "Write a recursive function to compute factorials and explain why deeply recursive calls can cause stack overflows in Python.",
+    "label": "complex",
+    "note": "Edge case: short prompt but dense — code plus explanation."
+  },
+  {
+    "id": 27,
+    "prompt": "How does gradient descent find the minimum of a loss function? Include a concrete example with numbers.",
+    "label": "complex",
+    "note": "Edge case: conceptual explanation with worked example."
+  },
+  {
+    "id": 28,
+    "prompt": "What is the difference between supervised and unsupervised learning?",
+    "label": "simple",
+    "note": "Edge case: sounds analytical but a one-paragraph definition covers it."
+  },
+  {
+    "id": 29,
+    "prompt": "Implement a thread-safe LRU cache in Python with O(1) get and put operations, and explain your design choices.",
+    "label": "complex",
+    "note": "Edge case: complex implementation with design justification."
+  },
+  {
+    "id": 30,
+    "prompt": "What does API stand for?",
+    "label": "simple",
+    "note": "Abbreviation — simplest possible case."
+  }
+]
