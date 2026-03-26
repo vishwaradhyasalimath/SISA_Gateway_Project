@@ -1,6 +1,6 @@
 # RouteWise
 
-A prompt router that decides — in about 1ms — whether a query needs a capable LLM
+A prompt router that decides in about 1s whether a query needs a capable LLM
 or whether a cheaper, faster one will do just as well.
 
 The research question driving the project: does smarter routing actually save money
