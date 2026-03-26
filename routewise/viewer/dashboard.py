@@ -102,8 +102,8 @@ def fetch_health():
 # ── sidebar ───────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown("### ⚙️ Controls")
-    n_rows       = st.slider("Rows to show", 20, 200, 100, 10)
+    # st.markdown("### ⚙️ Controls")
+    n_rows       = 20 #st.slider("Rows to show", 20, 200, 100, 10)
     auto_refresh = st.checkbox("Auto-refresh (3s)")
     if st.button("↺  Refresh"):
         st.cache_data.clear()
@@ -175,7 +175,7 @@ for col, val, lbl in [
 
 # cache stats
 if cache_stats:
-    with st.expander("📦 Cache stats"):
+    with st.expander(" Cache stats"):
         cols = st.columns(4)
         for col, k, lbl in [
             (cols[0], "lookups",   "Lookups"),
@@ -213,7 +213,7 @@ if not filtered:
 else:
     # table header
     hc = st.columns([1, 5, 2, 3, 2, 2])
-    for col, lbl in zip(hc, ["Time", "Prompt", "Model", "Routing reason", "Latency", "Cache"]):
+    for col, lbl in zip(hc, ["Time", "Prompt", "Model", "Routing reason", "Latency"]):
         col.markdown(f"**{lbl}**")
     st.markdown("<hr class='thin'>", unsafe_allow_html=True)
 
@@ -232,12 +232,12 @@ else:
                          unsafe_allow_html=True)
 
         ms = log.get("latency_ms", 0)
-        dot = "🟢" if ms < 500 else ("🟡" if ms < 2000 else "🔴")
+        dot = "" if ms < 500 else ("" if ms < 2000 else "")
         cols[4].caption(f"{dot} {ms:.0f} ms")
-        cols[5].caption("✅ Hit" if log.get("cache_hit") else "❌ Miss")
+        # cols[5].caption("✅ Hit" if log.get("cache_hit") else "❌ Miss")
 
 # cost comparison
-with st.expander("💰 Cost comparison — smart routing vs always-Capable"):
+with st.expander("$ Cost comparison — smart routing vs always-Capable"):
     non_cached = [l for l in req_logs
                   if not l.get("cache_hit") and l.get("model_used") != "cached"]
     if non_cached:

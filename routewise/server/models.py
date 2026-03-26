@@ -33,7 +33,7 @@ import litellm
 litellm.suppress_debug_info = True
 
 FAST_ID    = "groq/llama-3.1-8b-instant"
-CAPABLE_ID = "gemini/gemini-1.0-pro"
+CAPABLE_ID = "gemini-1.5-flash-preview"
 
 FAST_LABEL    = "Fast model (Groq Llama 3.1 8B)"
 CAPABLE_LABEL = "Capable model (Gemini 1.5 Flash)"
