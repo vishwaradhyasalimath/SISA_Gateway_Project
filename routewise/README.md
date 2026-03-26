@@ -13,7 +13,7 @@ measured it, and documented where it works and where it doesn't.
 
 ```bash
 # 1. Clone and enter
-git clone <your-repo-url> && cd routewise
+git clone <repo-url> && cd routewise
 
 # 2. Install
 pip install -r requirements.txt
